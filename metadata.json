@@ -1,0 +1,6 @@
+{
+  "name": "Android Studio Mobile IDE",
+  "description": "بيئة تطوير أندرويد متكاملة واحترافية للهواتف - محرر Kotlin و XML متقدم، نظام بناء حقيقي لملفات APK، طرفية تفاعلية، إدارة الاعتماديات، ومعاينة مرئية مع مساعد الذكاء الاصطناعي.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

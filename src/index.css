@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-ide-dark: #1e1f22;
+    --bg-ide-editor: #2b2d30;
+    --bg-ide-sidebar: #1e1f22;
+    --bg-ide-toolbar: #2b2d30;
+    --border-ide: #393b40;
+    --accent-android: #3ddc84;
+    --accent-android-dark: #2ba863;
+    --text-ide-primary: #dfe1e5;
+    --text-ide-secondary: #9da0a8;
+  }
+
+  body {
+    background-color: var(--bg-ide-dark);
+    color: var(--text-ide-primary);
+    font-family: 'Tajawal', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    overflow-x: hidden;
+    user-select: none;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Monospace fonts for editor, terminal, logs, gradle, and XML */
+  .font-mono-code {
+    font-family: 'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    direction: ltr !important;
+    text-align: left !important;
+  }
+}
+
+/* Custom sleek dark scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(30, 31, 34, 0.6);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4e5157;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6c707e;
+}
+
+/* Code editor syntax highlight colors */
+.hl-keyword { color: #cf8e6d; font-weight: 600; }
+.hl-type { color: #56a8f5; }
+.hl-function { color: #57b6ca; }
+.hl-string { color: #6aab73; }
+.hl-number { color: #2aacb8; }
+.hl-comment { color: #7a7e85; font-style: italic; }
+.hl-annotation { color: #b3ae60; }
+.hl-tag { color: #e8bf6a; }
+.hl-attribute { color: #bababa; }
+.hl-punctuation { color: #bcbec4; }
+.hl-variable { color: #dfe1e5; }
+
+/* Android Device Frame Simulation */
+.android-phone-frame {
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7), 0 0 0 8px #2b2d30, 0 0 0 10px #393b40;
+  border-radius: 36px;
+  overflow: hidden;
+  position: relative;
+}

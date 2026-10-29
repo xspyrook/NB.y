@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Android Studio Mobile IDE</title>
+    <meta name="description" content="بيئة تطوير أندرويد متكاملة واحترافية للهواتف - محرر Kotlin و XML متقدم، نظام بناء حقيقي لملفات APK، طرفية تفاعلية، إدارة الاعتماديات، ومعاينة مرئية مع مساعد الذكاء الاصطناعي." />
+    <meta property="og:title" content="Android Studio Mobile IDE" />
+    <meta property="og:description" content="بيئة تطوير أندرويد متكاملة واحترافية للهواتف - محرر Kotlin و XML متقدم، نظام بناء حقيقي لملفات APK، طرفية تفاعلية، إدارة الاعتماديات، ومعاينة مرئية مع مساعد الذكاء الاصطناعي." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#1e1f22" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="AS Mobile" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Tajawal:wght@400;500;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      // Gracefully handle Vite dev-server WebSocket messages in iframe/container
+      (function() {
+        const origError = console.error;
+        console.error = function(...args) {
+          if (args.length > 0) {
+            const firstArg = String(args[0]);
+            if (firstArg.includes('WebSocket closed without opened') || (firstArg.includes('[vite]') && firstArg.includes('WebSocket'))) {
+              return;
+            }
+          }
+          origError.apply(console, args);
+        };
+      })();
+
+      window.addEventListener('error', function(event) {
+        if (event.message && (event.message.includes('WebSocket') || event.message.includes('ws://') || event.message.includes('wss://'))) {
+          event.stopImmediatePropagation();
+        }
+      }, true);
+      window.addEventListener('unhandledrejection', function(event) {
+        if (event.reason && String(event.reason).includes('WebSocket')) {
+          event.stopImmediatePropagation();
+          event.preventDefault();
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
